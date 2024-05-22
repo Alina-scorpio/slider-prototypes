@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(163, 235, 163);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.marquee {
+  font-size: 40px;
+}
+
+.red {
+  color: red
+}
+
+.orange {
+  color: orange
+}
+
+.yellow {
+  color: yellow
+}
+
+.green {
+  color: green
+}
+
+.blue {
+  color: blue
+}
+
+.violet {
+  color: violet
+}
+
+.main {
+  max-width: 1200px;
+  min-height: 400px;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+
+}
+
+.main h1 {
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 50px;
+  font-style: italic;
+  color: green;
+  margin-bottom: 50px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.slides-container {
+  width: 100%;
+  position: relative;
+  width: 750px;
+  height: 450px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -99;
+  transition: opacity .2s;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-current {
+  opacity: 1;
+  z-index: 0;
+  transition: opacity .2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.controls-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  transform: translateY(-50%);
+}
+
+.control {
+  border-radius: 50%;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.control img {
+  width: 100%;
+  height: 100%;
+}
+
+.indicators-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.indicator {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: green;
+  cursor: pointer;
+}
+
+.indicator-current {
+  background-color: yellow;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+  .slides-container {
+    width: 590px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slides-container {
+    width: 390px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slides-container {
+    width: 340px;
+    height: 250px;
+  }
+}

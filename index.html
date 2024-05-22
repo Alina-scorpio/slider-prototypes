@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider. Prototypes and inheritance</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+
+      <marquee class="marquee" behavior="scroll" direction="left" scrollamount="20"><span class="red">Ласкаво просимо до
+          Запоріжжя! </span><span class="orange">Welcome to Zaporizhzhia! </span><span class="yellow">Ласкаво просимо до
+          Запоріжжя! </span><span class="green">Welcome to Zaporizhzhia! </span><span class="blue">Ласкаво просимо до
+          Запоріжжя! </span><span class="violet">Welcome to Zaporizhzhia!</span>
+      </marquee>
+
+    </header>
+    <main class="main">
+      <h1 class="title">Запоріжжя моє..</h1>
+
+      <div id="carousel" class="carousel">
+        <div id="slides-container" class="slides-container">
+          <div class="slide slide-current">
+
+            <img src="./assets/images/img01.jpg" alt="01">
+
+          </div>
+          <div class="slide">
+
+            <img src="./assets/images/img02.jpg" alt="01">
+
+          </div>
+          <div class="slide">
+
+            <img src="./assets/images/img03.jpg" alt="01">
+
+          </div>
+          <div class="slide">
+
+            <img src="./assets/images/img04.jpg" alt="01">
+
+          </div>
+          <div class="slide">
+
+            <img src="./assets/images/img05.jpg" alt="01">
+
+          </div>
+          <div class="slide">
+
+            <img src="./assets/images/img06.avif" alt="01">
+
+          </div>
+          <div class="slide">
+
+            <img src="./assets/images/img07.jpg" alt="01">
+
+          </div>
+          <div class="slide">
+
+            <img src="./assets/images/img08.jpg" alt="01">
+
+          </div>
+          <div class="slide">
+
+            <img src="./assets/images/img09.jpg" alt="01">
+
+          </div>
+        </div>
+        <div id="controls-container" class="controls-container">
+          <div id="prev-btn" class="control control-prev"><img src="./assets/arrow_left.svg" alt="arrow-left"></div>
+          <div id="pausePlay-btn" class="control control-pause-play"><img src="./assets/pause.svg" alt="pause"></div>
+          <div id="next-btn" class="control control-next"><img src="./assets/arrow_right.svg" alt="arrow-right"></div>
+        </div>
+        <div id="indicators-container" class="indicators-container">
+          <div class="indicator indicator-current" data-slide-to="0"></div>
+          <div class="indicator" data-slide-to="1"></div>
+          <div class="indicator" data-slide-to="2"></div>
+          <div class="indicator" data-slide-to="3"></div>
+          <div class="indicator" data-slide-to="4"></div>
+          <div class="indicator" data-slide-to="5"></div>
+          <div class="indicator" data-slide-to="6"></div>
+          <div class="indicator" data-slide-to="7"></div>
+          <div class="indicator" data-slide-to="8"></div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="footer">&copy; Alina Scorpion</footer>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
