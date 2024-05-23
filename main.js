@@ -71,11 +71,13 @@ Carousel.prototype = {
     if (code === 'ArrowRight') this.nextHandler();
   },
   swipeStart(e) {
+    console.log('Swipe start'); // Логирование для отладки
     this.startPosX = e instanceof MouseEvent
       ? e.pageX // MouseEvent
       : e.changedTouches[0].pageX; // TouchEvent
   },
   swipeEnd(e) {
+    console.log('Swipe end'); // Логирование для отладки
     this.endPosX = e instanceof MouseEvent
       ? e.pageX // MouseEvent
       : e.changedTouches[0].pageX; // TouchEvent
@@ -94,6 +96,7 @@ Carousel.prototype = {
     document.addEventListener('keydown', this.pressKey.bind(this));
   },
   init() {
+    console.log('Initialize carousel'); // Логирование для отладки
     this.initListeners();
     this.tick();
   }
